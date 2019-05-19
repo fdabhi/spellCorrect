@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../static/main.css">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script type=text/javascript>
+            $(function() {
+              $('a#process_input').bind('click', function() {
+                $.post('/spellCorrect', {  
+                  word: $('input[name="word"]').val(),
+                }, function(data) {
+                  $('#result').text(data.result);
+                });
+                return false;
+              });
+            });
+        </script>
+    </head>
+
+    <body>
+        <div class='container'>
+            <form>
+                <input id="text_input" name=word type="text" value="" placeholder="type word here" class="input-1"></input>
+                <a href=# id=process_input><button class='btn btn-default'>Submit</button></a>
+            </form>
+            <br>
+            <p><h2 align='left'>Correction(s):</h2><h2 id=result align='left'></h2></p>
+
+        </div>
+    </body>
+</html>
