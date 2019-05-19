@@ -4,7 +4,7 @@ Creating a spelling correction app using the Flask web framework and Python port
 
 It takes input as a word (with a spelling mistake) and shows a list of correct words.
 
-It corrects words that are merged (eg: "aboutthat", "quick🤗Assignment"), words separated by space or '-'.
+It corrects words that are merged (eg: "aboutthat", "quick🤗Assignment"), repetitive letters (eg: "awwwesome"), words separated by space or '-'.
 
 ## Dependencies
 
