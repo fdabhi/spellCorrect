@@ -9,6 +9,7 @@ It corrects words that are merged (eg: "aboutthat", "quick🤗Assignment"), word
 ## Dependencies
 
 * SymSpell: (https://github.com/mammothb/symspellpy)
+* Flask: (http://flask.pocoo.org/)
 
 ## Install guide
 
